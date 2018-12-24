@@ -1,0 +1,14 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+ a #1, offset(-4)
+ b #2, offset(-8)
+ c #3, offset(-12)
+ d #4, offset(-16)
+root
+ func[ identifier(r0)(main)] ()
+  l(3): declaration( identifier(r0)(a identifier(r0)(b identifier(r0)(c identifier(r0)(d)))))
+  l(4): stm_asign( exp_asign(r1)( identifier(r1)(a) add(r0)( identifier(r0)(a) add(r1)( identifier(r1)(b) add(r0)( identifier(r0)(c) identifier(r1)(d))))))
+

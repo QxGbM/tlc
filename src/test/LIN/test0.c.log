@@ -1,0 +1,8 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+root
+ func[ identifier(r0)(main)] ()
+

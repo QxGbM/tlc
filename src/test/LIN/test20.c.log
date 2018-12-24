@@ -1,0 +1,16 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+ i #1, offset(-4)
+root
+ func[ identifier(r0)(main)] ()
+  l(3): declaration( identifier(r0)(i))
+  l(6): for( exp_asign(r0)( identifier(r0)(i) const_int(r1)(0)) lt(r0)( identifier(r0)(i) const_int(r1)(10)) exp_asign(r1)( identifier(r1)(i) add(r0)( identifier(r0)(i) const_int(r1)(1)))
+   l(6): list(
+    l(5): stm_asign()
+   )
+  )
+  l(7): stm_asign( call(r0)( identifier(r0)(put_int) ( identifier(r0)(i))))
+

@@ -1,0 +1,27 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+ a #1, offset(-4)
+ b #2, offset(-8)
+root
+ func[ identifier(r0)(main)] ()
+  l(3): declaration( identifier(r0)(a identifier(r0)(b)))
+  l(5): stm_asign( exp_asign(r0)( identifier(r0)(a) const_int(r1)(2)))
+  l(5): stm_asign( exp_asign(r0)( identifier(r0)(b) const_int(r1)(1)))
+  l(10): if( gt(r0)( identifier(r0)(a) identifier(r1)(b))
+   l(8): list(
+    l(7): stm_asign( exp_asign(r1)( identifier(r1)(a) add(r0)( identifier(r0)(b) const_int(r1)(1))))
+   )
+  )
+  l(14): if( eq(r0)( identifier(r0)(b) identifier(r1)(a))
+   l(12): list(
+    l(11): stm_asign( exp_asign(r1)( identifier(r1)(a) add(r0)( identifier(r0)(a) identifier(r1)(b))))
+   )
+   l(14): list(
+    l(13): stm_asign( exp_asign(r1)( identifier(r1)(a) sub(r0)( identifier(r0)(a) identifier(r1)(b))))
+   )
+  )
+  l(15): stm_asign( call(r0)( identifier(r0)(put_int) ( identifier(r0)(a))))
+

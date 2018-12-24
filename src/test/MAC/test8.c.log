@@ -1,0 +1,12 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+ a #1, offset(-4)
+ b #2, offset(-8)
+root
+ func[ identifier(r0)(main)] ()
+  l(3): declaration( identifier(r0)(a identifier(r0)(b)))
+  l(4): return( add(r0)( identifier(r0)(a) identifier(r1)(b)))
+

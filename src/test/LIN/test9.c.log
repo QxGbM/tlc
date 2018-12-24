@@ -1,0 +1,9 @@
+FuncTab
+ main #1
+
+SymTab
+id(1)
+root
+ func[ identifier(r0)(main)] ()
+  l(3): stm_asign( call(r0)( identifier(r0)(put_int) ( const_int(r0)(1))))
+
